@@ -1,8 +1,6 @@
 function fish_greeting
     if status is-interactive
         set EDITOR hx
-        set -g fish_prompt_pwd_dir_length 5
-        set -g fish_prompt_pwd_full_length_dirs 5
         if [ "$TERM" = "linux" ]
             echo -en "\e]P0282c34" # Background color
             echo -en "\e]PFFFFFFF" # Foreground color
