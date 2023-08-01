@@ -1,6 +1,7 @@
 function fish_greeting
     if status is-interactive
         set EDITOR hx
+        fish_add_path ~go/bin/
         if [ "$TERM" = "linux" ]
             echo -en "\e]P0282c34" # Background color
             echo -en "\e]PFFFFFFF" # Foreground color
